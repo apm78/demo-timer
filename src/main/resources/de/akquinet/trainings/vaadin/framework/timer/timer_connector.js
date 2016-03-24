@@ -12,10 +12,6 @@ window.de_akquinet_trainings_vaadin_framework_timer_TimerExtension = function ()
 
     var eventCount = 0;
     
-    // var parent = connector.getParentId();
-    // var element = connector.getElement();
-    // console.log("TimerExtension parent:" + parent + ", connector:" + connector, ", element:" + element);
-
     var stopImpl = function () {
         if (null !== intervalId) {
             clearTimeout(intervalId);
@@ -41,10 +37,6 @@ window.de_akquinet_trainings_vaadin_framework_timer_TimerExtension = function ()
     connector.triggerNextInterval = function () {
         restartImpl();
     }
-
-    // connector.stop = function () {
-    //     stopImpl()
-    // }
 
     connector.onStateChange = function () {
         enabled = this.getState().enabled;

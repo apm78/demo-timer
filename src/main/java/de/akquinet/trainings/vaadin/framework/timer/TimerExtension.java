@@ -52,13 +52,6 @@ public class TimerExtension extends AbstractJavaScriptExtension
                 }
                 triggerNextInterval();
             }
-//            else
-//            {
-//                Logger.getLogger(TimerExtension.class.getName()).warning("Event discarded, isAttached="
-//                        + isAttached()
-//                        + ", isConnectorEnabled=" + isConnectorEnabled()
-//                + ", isStarted=" + isStarted());
-//            }
         });
     }
 
